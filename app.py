@@ -56,6 +56,11 @@ while True:
     # convert the user's choice to lowercase
     play_again = play_again.lower()
 
+    # check if the user's choice is invalid
+    if play_again not in ["yes", "no"]:
+        print("Invalid choice. Please enter yes or no.")
+        continue    
+
     # if the user does not want to play again, break out of the loop
     if play_again == "no":
         break
